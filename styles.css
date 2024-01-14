@@ -1,17 +1,125 @@
-:root {
-  --swiggle-seperation: 1.4rem;
-  --blue-button-x-position: 10vw;
-  --blue-button-y-position: 80vh;
-  --opacity-high: 0.9;
-  --opacity-mid: 0.5;
-  --opacity-low: 0.2;
-}
 * {
   margin: 0;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
 }
 body {
   background: rgb(208, 221, 223);
+  display: grid;
 }
 .absolute {
   position: absolute;
+}
+
+.main-card {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  top: 15vh;
+  left: 27.5vw;
+  width: 45vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:
+    30vh
+    40vh;
+
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 1rem hsl(218, 22%, 67%);
+}
+.padding {
+  padding: 2rem;
+}
+.padding-10-20 {
+  padding: 1rem 0 1.8rem 0;
+}
+
+/*FIRST ROW*/
+.card-row-1 {
+  grid-column-start: span 2;
+  grid-column-end: 3;
+  background: white;
+}
+
+.row-1-header {
+  color: rgb(33, 171, 157);
+  font-weight: 700;
+}
+.row-1-subtitle {
+  color: hsl(71, 73%, 54%);
+  padding: 1.5rem 0 1rem 0;
+  font-weight: 700;
+}
+.row-1-text {
+  color: hsl(218, 22%, 67%);
+}
+/*SECOND ROW*/
+
+.card-row-2-left {
+  background: hsl(179, 62%, 43%);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.row-2-price {
+  display: flex;
+  align-items: center;
+
+  font-size: 0.8rem;
+}
+.row-2-text {
+  color: hsl(204, 43%, 93%);
+}
+
+.row-2-header,
+.row-2-price-bold {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+}
+.row-2-price-bold {
+  font-size: 2rem;
+}
+.row-2-per-month {
+  font-size: 1rem;
+  padding-left: 1rem;
+  color: hsla(203, 44%, 93%, 0.922);
+}
+.card-row-2-right {
+  background: hsl(179, 62%, 45%);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.row-2-col-2-header {
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+}
+.row-2-col-2-list {
+  color: hsla(203, 44%, 93%, 0.815);
+
+  list-style: none;
+  padding: 0;
+}
+.row-2-col-2-list li {
+  padding: 0.1rem 0 0 0;
+}
+
+.row-2-sign-up {
+  background: hsl(71, 73%, 54%);
+  border: none;
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  padding: 0.8rem 7rem;
+  box-shadow: 0 1rem 4rem hsl(218, 22%, 67%);
+  text-wrap: nowrap;
+}
+.row-2-sign-up:hover {
+  color: rgb(47, 46, 46);
+  transform: translateY(0.1rem);
+  box-shadow: none;
 }
