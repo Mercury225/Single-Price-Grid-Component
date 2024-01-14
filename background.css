@@ -1,0 +1,94 @@
+/*backgrounds*/
+/*swiggle*/
+.swiggle {
+  opacity: var(--opacity-mid);
+}
+.small-square {
+  right: 0;
+  top: 20vh;
+  width: 1rem;
+  height: 1rem;
+
+  border-top: 0.2rem solid rgb(208, 62, 62);
+  border-left: 0.2rem solid rgb(208, 62, 62);
+  transform: rotate(45deg);
+}
+.ss2 {
+  right: var(--swiggle-seperation);
+}
+.ss3 {
+  right: calc(var(--swiggle-seperation) * 2);
+}
+.ss4 {
+  right: calc(var(--swiggle-seperation) * 3);
+}
+.ss5 {
+  right: calc(var(--swiggle-seperation) * 4);
+}
+/*swiggle end*/
+
+/*l-shaped rectangle*/
+.l-shaped-rectangle {
+  height: 2rem;
+  width: 1rem;
+  border-bottom: 0.4rem solid rgb(208, 62, 62);
+  border-left: 0.4rem solid rgb(208, 62, 62);
+  left: 25vw;
+  opacity: var(--opacity-mid);
+}
+
+/*two parallel blue lines*/
+.two-blue-lines {
+  height: 10rem;
+  width: 1rem;
+  opacity: var(--opacity-mid);
+  transform: rotate(20deg);
+  border-left: 0.4rem solid rgb(50, 80, 231);
+  border-right: 0.4rem solid rgb(50, 80, 231);
+  top: 30vh;
+  left: 10vw;
+}
+
+/*two parallel blue lines end*/
+
+/*singular blue circle*/
+.blue-circle {
+  opacity: var(--opacity-low);
+  top: 70vh;
+  left: 60vw;
+  height: 6rem;
+  width: 6rem;
+
+  border: 0.4rem solid rgb(50, 80, 231);
+  border-radius: 50%;
+}
+
+/* singular blue circle end*/
+
+/*blue-circle pad in bottom left*/
+.blue-circle-buttons {
+  position: relative;
+  opacity: var(--opacity-high);
+}
+.blue-circle-button {
+  border: 0.4rem solid rgb(61, 207, 226);
+  border-radius: 50%;
+  top: var(--blue-button-y-position);
+  left: var(--blue-button-x-position);
+}
+.mid {
+  left: calc(var(--blue-button-x-position) + 1.1rem);
+}
+.right {
+  left: calc(var(--blue-button-x-position) + 2.2rem);
+}
+.row-2 {
+  top: calc(var(--blue-button-y-position) + 1rem);
+}
+.row-3 {
+  top: calc(var(--blue-button-y-position) + 2rem);
+}
+.row-4 {
+  top: calc(var(--blue-button-y-position) + 3rem);
+}
+/*blue-circle pad in bottom left end*/

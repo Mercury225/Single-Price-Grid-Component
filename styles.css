@@ -1,6 +1,17 @@
+:root {
+  --swiggle-seperation: 1.4rem;
+  --blue-button-x-position: 10vw;
+  --blue-button-y-position: 80vh;
+  --opacity-high: 0.9;
+  --opacity-mid: 0.5;
+  --opacity-low: 0.2;
+}
+* {
+  margin: 0;
+}
 body {
   background: rgb(208, 221, 223);
 }
-html {
-  margin: 0;
+.absolute {
+  position: absolute;
 }
