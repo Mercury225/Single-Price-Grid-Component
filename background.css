@@ -63,9 +63,9 @@
 .blue-circle {
   opacity: var(--opacity-low);
   top: 70vh;
-  left: 60vw;
-  height: 6rem;
-  width: 6rem;
+  left: 70vw;
+  height: 10rem;
+  width: 10rem;
 
   border: 0.4rem solid rgb(50, 80, 231);
   border-radius: 50%;

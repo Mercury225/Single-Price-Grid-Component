@@ -29,7 +29,7 @@ body {
   box-shadow: 0 0.2rem 1rem hsl(218, 22%, 67%);
 }
 .padding {
-  padding: 2rem;
+  padding: 2vh 2vw;
 }
 .padding-10-20 {
   padding: 1rem 0 1.8rem 0;
@@ -43,6 +43,7 @@ body {
 }
 
 .row-1-header {
+  padding-top: 0.5rem;
   color: rgb(33, 171, 157);
   font-weight: 700;
 }
@@ -117,9 +118,78 @@ body {
   padding: 0.8rem 7rem;
   box-shadow: 0 1rem 4rem hsl(218, 22%, 67%);
   text-wrap: nowrap;
+  width: 100%;
 }
 .row-2-sign-up:hover {
   color: rgb(47, 46, 46);
   transform: translateY(0.1rem);
   box-shadow: none;
+}
+@media screen and (max-width: 1350px) {
+  .main-card {
+    width: 60vw;
+    left: 20vw;
+  }
+}
+@media screen and (max-width: 990px) {
+  .main-card {
+    width: 80vw;
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .main-card {
+    width: 80vw;
+    left: 10vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .card-row-1 {
+    grid-column-start: span 1;
+    grid-column-end: 2;
+    background: white;
+  }
+  .card-row-2-left {
+    grid-column-start: span 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .card-row-2-right {
+    grid-column-start: span 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .padding {
+    padding: 3rem;
+    padding-left: 3.5rem;
+  }
+  .row-1-text {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-card {
+    left: 7.5vw;
+    width: 85vw;
+
+    top: 5vh;
+  }
+  * {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-card {
+    width: 90vw;
+    left: 5vw;
+  }
 }
