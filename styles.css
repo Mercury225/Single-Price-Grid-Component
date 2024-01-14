@@ -1,3 +1,6 @@
 body {
   background: rgb(208, 221, 223);
 }
+html {
+  margin: 0;
+}
